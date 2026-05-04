@@ -4,7 +4,7 @@ const  Todo =require("../models/Todo");
 const router = express.Router();
 
 // GET ALL TODOS
-router.get("/", async (req, res) => {
+router.get("/todos", async (req, res) => {
     const todos = await Todo.find().sort({ createdAt: -1 });
     res.json(todos);
 });
