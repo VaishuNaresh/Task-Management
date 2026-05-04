@@ -4,8 +4,8 @@ const path = require("path")
 const dotenv = require("dotenv")
 
 //join property
-dotenv.config({ path: path.join(__dirname, "config", ".env") })
-// dotenv.config();
+// dotenv.config({ path: path.join(__dirname, "config", ".env") })
+ dotenv.config();
 const express = require("express")
 const app = express();
 const mongoose = require("mongoose");
